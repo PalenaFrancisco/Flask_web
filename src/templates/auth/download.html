@@ -1,0 +1,16 @@
+{% extends "./base.html" %}
+
+{% block title %}Descargar Excel{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/download.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h2>Descargar Archivo Excel</h2>
+    <a href="{{ url_for('download') }}" class="btn btn-success">Descargar Excel</a>
+</div>
+
+{% endblock %}
